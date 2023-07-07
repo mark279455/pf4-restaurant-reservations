@@ -82,3 +82,13 @@ footer {
     height: 2rem;
     margin: 1rem;
 }
+
+.hero-img {
+    /* width: 70%; */
+    /* background-image: url("/static/images/rest1.webp"); */
+    height: 400px;
+    width: 50rem;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
