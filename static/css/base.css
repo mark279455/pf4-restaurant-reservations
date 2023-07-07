@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400&family=Strait&display=swap');
+
+/* font-family: 'Catamaran', sans-serif;
+font-family: 'Strait', sans-serif; */
+
+:root {
+    /* Fonts */
+    --title: 'Catamaran', sans-serif;
+    --main-font: 'Strait', sans-serif;
+
+    /* colours */
+    --background: #67717a;
+    --blue: #59ccf1;
+    --yellow: #cda54b;
+    --off-white: #f0f0f0;
+    --white: #fff;
+    --black: #000;
+    --green: yellowgreen;
+
+    /* utils */
+    --border: 1px solid #000;
+    --small-box-shadow: 1px -1px 7px 0 #000;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title);
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--blue);
+}
+
+/* Header */
+.navbar {
+    /* height: 4rem; */
+    background-color: var(--background);
+    box-shadow: var(--small-box-shadow);
+}
+
+.container-fluid {
+    background-color: var(--green);
+}
+
+a.nav-link {
+    color: var(--black);
+}
+
+img.logo {
+    width: 15rem;
+    height: 8rem;
+}
+
+/* Footer */
+footer {
+    flex-shrink: 0;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    border-top: var(--border);
+}
+
+.social-icon {
+    height: 2rem;
+    margin: 1rem;
+}
