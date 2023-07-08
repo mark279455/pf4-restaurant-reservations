@@ -3,8 +3,11 @@
 {% block content %}
 
 <div class="container-wrapper">
-    <div class="hero-img">
-        <img class="hero-img" src="/static/images/rest7.webp" alt="restaurant image">
+    <div class="homepage-img">
+        <div class="imgwrap">
+            {% load random_image %}
+            <img src="{{ MEDIA_URL }}{% random_image %}" alt="restaurant image">
+        </div>
     </div>
     <div class="content-wrapper main-column">
         <div class="text-area content">
@@ -12,10 +15,14 @@
             <h1 class="text-center">WELCOME</h1>
             <div>
                 <p>
-                    
+                    Our restaurant is a beautifully renovated listed building with high gabled ceilings and a wonderful ambience. 
+                    Join us for the freshest, most delicious steak, fish and shellfish in this stunning setting.
+                    We have outdoor seating for 50, a separate bar area and a fish counter in the restaurant selling 
+                    fresh and smoked fish and a range of delicatessen products.
                 </p>
                 <p>
-                    
+                    For a first rate à la carte menu filled with seasonal and fresh dishes, come and visit Scoff's restaurant today.
+                    Great food and welcoming atmosphere.
                 </p>
 
                 <!-- Booking and menu buttons -->
@@ -30,8 +37,8 @@
                             src="https://maps.google.com/maps?q=torr%20head&t=&z=13&ie=UTF8&iwloc=&output=embed">
                         </iframe>
                     </div> -->
-                    <!-- Opening hours -->
-                    <!-- <div class="opening text-center form-style">
+                <!-- Opening hours -->
+                <!-- <div class="opening text-center form-style">
                         <p><strong>Lunch Opening Times</strong></p>
                         <ul>
                             <li>Monday to Saturday 12pm – 3.45pm</li>
@@ -48,10 +55,10 @@
                             <li>Sunday 4pm - 10pm</li>
                         </ul>
                     </div> -->
-                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 {%endblock%}
