@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400&family=Strait&display=swap');
-
-/* font-family: 'Catamaran', sans-serif;
-font-family: 'Strait', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
 
 :root {
     /* Fonts */
-    --title: 'Catamaran', sans-serif;
-    --main-font: 'Strait', sans-serif;
+    --title: Montserrat, sans-serif;
+    --main-font: Ubuntu, sans-serif;
 
     /* colours */
     --background: #67717a;
@@ -50,12 +47,12 @@ main {
 /* Header */
 .navbar {
     /* height: 4rem; */
-    background-color: var(--background);
+    background-color: var(--blue);
     box-shadow: var(--small-box-shadow);
 }
 
 .container-fluid {
-    background-color: var(--green);
+    background-color: var(--blue);
 }
 
 a.nav-link {
@@ -69,30 +66,47 @@ img.logo {
 
 /* Footer */
 footer {
-    flex-shrink: 0;
-    background-color: var(--green);
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
+    background-color: var(--blue);
     border-top: var(--border);
+    max-height: 120px;
+}
+
+#footer-items {
+    display: flex;
+}
+
+.address {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.address p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-left: 0.5rem;
+}
+
+.social {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-content: center;
 }
 
 .social-icon {
-    height: 2rem;
+    height:2rem;
     margin: 1rem;
 }
 
 .homepage-img {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
 }
 
 .imgwrap {
     width: 80%;
-    /*or whatever you choose*/
     margin: auto;
 }
 
@@ -101,13 +115,15 @@ footer {
     width: 100%;
     object-fit: cover;
     max-height: 400px;
-    /*actual image width*/
     height: auto;
-    /* maintain aspect ratio*/
     margin: auto;
-    /*optional centering of image*/
 }
 
-p {
-    
+.welcome {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.welcome p {
+    padding: 0.5rem 1rem;
 }
